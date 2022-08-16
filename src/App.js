@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Navigation from "./components/Navigation";
+import { Tooltip, IconButton } from "@mui/material";
+import { BsSunFill, BsSun } from "react-icons/bs";
+import { useEffect, useState } from "react";
+import Blogs from "./pages/Blogs";
+const App = () => {
+  const [darkMode, setDarkMode] = useState(false);
+  const toggle = (e) => {
+    e.preventDefault();
+    return setDarkMode(!darkMode);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="container relative min-h-screen">
+      <Routes>
+        <Route path="/" element={<Navigation />}>
+          <Route index element={<Home />} />
+          <Route path="/blogs" element={<Blogs />} />
+        </Route>
+      </Routes>
+
+      <div className="fixed bottom-3 right-3">
+        <Tooltip
+          title={`${darkMode ? "Light Mode" : "Dark mode"}`}
+          placement="top"
+          onClick={toggle}
         >
-          Learn React
-        </a>
-      </header>
+          <IconButton>{darkMode ? <BsSunFill /> : <BsSun />}</IconButton>
+        </Tooltip>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
