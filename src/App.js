@@ -5,6 +5,7 @@ import { Tooltip, IconButton } from "@mui/material";
 import { BsSunFill, BsSun } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import Blogs from "./pages/Blogs";
+import Blog from "./components/Blog";
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   const toggle = (e) => {
@@ -12,11 +13,12 @@ const App = () => {
     return setDarkMode(!darkMode);
   };
   return (
-    <div className="container relative min-h-screen">
+    <div className=" relative min-h-screen">
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blog-details" element={<Blog />} />
         </Route>
       </Routes>
 

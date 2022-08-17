@@ -10,7 +10,10 @@ module.exports = {
       },
       backgroundImage: {
         "hero-image": "url('/src/assets/hero-image.svg')",
-        // 'footer-texture': "url('/img/footer-texture.png')",
+        blog1:
+          "url('https://images.unsplash.com/photo-1544735716-ea9ef790f501?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')",
+        blog2:
+          "url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80')",
       },
       fontFamily: {
         common: ["Josefin Sans"],
