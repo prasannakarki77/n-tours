@@ -14,7 +14,7 @@ const Navigation = () => {
           <Link className="m-4 hover:text-primary transition-all" to="/">
             Home
           </Link>
-          <Link className="m-4 hover:text-primary transition-all" to="/">
+          <Link className="m-4 hover:text-primary transition-all" to="/tours">
             Our Tours
           </Link>
           <Link className="m-4 hover:text-primary transition-all" to="/blogs">

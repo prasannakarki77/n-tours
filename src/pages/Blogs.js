@@ -26,7 +26,9 @@ const Blogs = () => {
       </h1>
       {blogs.map((blog) => (
         <div className="max-w-4xl flex justify-between shadow-lg rounded-2xl my-0 mx-auto overflow-hidden mb-10">
-          <div className={`min-w-[40%] bg-${blog.image} bg-cover`}></div>
+          <div
+            className={`min-w-[40%] bg-blog1 bg-${blog.image}  bg-cover`}
+          ></div>
           <div className=" p-5 ">
             <div className="font-special text-xl mb-2">{blog.title}</div>
             <div className="mb-4">{blog.desc}</div>

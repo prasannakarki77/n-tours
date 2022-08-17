@@ -6,6 +6,7 @@ import { BsSunFill, BsSun } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import Blogs from "./pages/Blogs";
 import Blog from "./components/Blog";
+import Tours from "./components/Tours";
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   const toggle = (e) => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/tours" element={<Tours />} />
           <Route path="/blog-details" element={<Blog />} />
         </Route>
       </Routes>
