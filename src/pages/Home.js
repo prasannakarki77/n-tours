@@ -2,6 +2,8 @@ import React from "react";
 import Tours from "../components/Tours";
 import Blogs from "./Blogs";
 import { BsArrowRightCircle } from "react-icons/bs";
+import Activities from "../components/Activities";
+
 const Home = () => {
   return (
     <>
@@ -19,6 +21,10 @@ const Home = () => {
           </button>
         </div>
       </section>
+      <section>
+        <Activities />
+      </section>
+
       <section>
         <Blogs />
       </section>

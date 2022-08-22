@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Permanent+Marker&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .hero-section {
+  clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+}
+
+.activities {
   clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
 }

@@ -11,13 +11,12 @@ import Tours from "./components/Tours";
 import useDarkMode from "./useDarkMode";
 const App = () => {
   const [colorTheme, setTheme] = useDarkMode();
-  const toggle = (e) => {
-    e.preventDefault();
+  const toggle = () => {
     setTheme(colorTheme);
   };
 
   return (
-    <div className=" relative min-h-screen dark:bg-black">
+    <div className=" relative min-h-screen dark:bg-black transition-all">
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
