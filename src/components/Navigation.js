@@ -5,12 +5,12 @@ import { FiMenu } from "react-icons/fi";
 const Navigation = () => {
   return (
     <>
-      <div className="flex justify-between items-center p-3 shadow-md">
+      <div className="flex justify-between items-center p-3 shadow-md dark:bg-tertiary">
         <div className="font-special text-primary font-bold text-2xl">
           <Link to="/">N-Tours</Link>
         </div>
 
-        <div className="inline-block text-base font-semibold ">
+        <div className="inline-block text-base font-semibold dark:text-white ">
           <Link className="m-4 hover:text-primary transition-all" to="/">
             Home
           </Link>

@@ -2,19 +2,22 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
 import { Tooltip, IconButton } from "@mui/material";
-import { BsSunFill, BsSun } from "react-icons/bs";
-import { useEffect, useState } from "react";
+import { BsSunFill } from "react-icons/bs";
+import { MdDarkMode } from "react-icons/md";
+import { RiSunFill } from "react-icons/ri";
 import Blogs from "./pages/Blogs";
 import Blog from "./components/Blog";
 import Tours from "./components/Tours";
+import useDarkMode from "./useDarkMode";
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [colorTheme, setTheme] = useDarkMode();
   const toggle = (e) => {
     e.preventDefault();
-    return setDarkMode(!darkMode);
+    setTheme(colorTheme);
   };
+
   return (
-    <div className=" relative min-h-screen">
+    <div className=" relative min-h-screen dark:bg-black">
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
@@ -24,13 +27,19 @@ const App = () => {
         </Route>
       </Routes>
 
-      <div className="fixed bottom-3 right-3">
+      <div className="fixed bottom-3 right-3 p-1 shadow-xl rounded-xl bg-primary">
         <Tooltip
-          title={`${darkMode ? "Light Mode" : "Dark mode"}`}
+          title={`${colorTheme === "dark" ? "Dark mode" : "Light Mode"}`}
           placement="top"
           onClick={toggle}
         >
-          <IconButton>{darkMode ? <BsSunFill /> : <BsSun />}</IconButton>
+          <IconButton>
+            {colorTheme === "dark" ? (
+              <MdDarkMode className="text-white" />
+            ) : (
+              <RiSunFill className="text-white" />
+            )}
+          </IconButton>
         </Tooltip>
       </div>
     </div>

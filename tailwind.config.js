@@ -1,12 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         primary: "#3DB9AA",
         primary_dark: "#309A8D",
         secondary: "#0AA",
+        tertiary: "#2a2e35",
       },
       backgroundImage: {
         "hero-image": "url('/src/assets/hero-image.svg')",

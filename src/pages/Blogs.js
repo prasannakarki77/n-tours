@@ -25,7 +25,7 @@ const Blogs = () => {
         Articles and Blogs
       </h1>
       {blogs.map((blog) => (
-        <div className="max-w-4xl flex justify-between shadow-lg rounded-2xl my-0 mx-auto overflow-hidden mb-10">
+        <div className="max-w-4xl flex justify-between shadow-lg rounded-2xl my-0 mx-auto overflow-hidden mb-10 dark:bg-tertiary dark:text-white">
           <div
             className={`min-w-[40%] bg-blog1 bg-${blog.image}  bg-cover`}
           ></div>
@@ -35,7 +35,7 @@ const Blogs = () => {
             <div className="text-gray-400 font-semibold">{blog.date}</div>
             <Link to="/blog-details">
               {" "}
-              <button className="ml-auto flex items-center  text-secondary text-lg font-bold justify-end hover:scale-105 transition-all">
+              <button className="ml-auto flex items-center  text-primary text-lg font-bold justify-end hover:scale-105 transition-all">
                 Read more <AiFillRightCircle className="ml-2" />
               </button>
             </Link>
