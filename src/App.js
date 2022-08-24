@@ -10,6 +10,7 @@ import Blog from "./components/Blog";
 import Tours from "./components/Tours";
 import useDarkMode from "./useDarkMode";
 import OurTours from "./pages/OurTours";
+import Footer from "./components/Footer";
 const App = () => {
   const [colorTheme, setTheme] = useDarkMode();
   const toggle = () => {
@@ -42,6 +43,7 @@ const App = () => {
           </IconButton>
         </Tooltip>
       </div>
+      <Footer />
     </div>
   );
 };
