@@ -57,7 +57,7 @@ const SignIn = () => {
         <p className="my-10 text-center">
           Not Signed in yet?{" "}
           <Link
-            to="/"
+            to="/signup"
             className=" text-primary font-bold transition-all hover:underline "
           >
             Sign Up

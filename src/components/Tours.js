@@ -1,5 +1,4 @@
 import React from "react";
-import everest from "../assets/everest.jpg";
 
 const Tours = () => {
   const toursList = [

@@ -2,15 +2,14 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
 import { Tooltip, IconButton } from "@mui/material";
-import { BsSunFill } from "react-icons/bs";
 import { MdDarkMode } from "react-icons/md";
 import { RiSunFill } from "react-icons/ri";
 import Blogs from "./pages/Blogs";
 import Blog from "./components/Blog";
-import Tours from "./components/Tours";
 import useDarkMode from "./useDarkMode";
 import OurTours from "./pages/OurTours";
 import Footer from "./components/Footer";
+import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 const App = () => {
   const [colorTheme, setTheme] = useDarkMode();
@@ -27,6 +26,7 @@ const App = () => {
           <Route path="/tours" element={<OurTours />} />
           <Route path="/blog-details" element={<Blog />} />
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
         </Route>
       </Routes>
 
