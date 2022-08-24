@@ -24,7 +24,7 @@ const Footer = () => {
             Home
           </Link>
           <Link
-            to="/"
+            to="/tours"
             className="mb-1 block hover:underline transition-all cursor-pointer"
           >
             Our Tours

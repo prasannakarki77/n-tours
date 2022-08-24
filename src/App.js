@@ -11,6 +11,7 @@ import Tours from "./components/Tours";
 import useDarkMode from "./useDarkMode";
 import OurTours from "./pages/OurTours";
 import Footer from "./components/Footer";
+import SignIn from "./pages/SignIn";
 const App = () => {
   const [colorTheme, setTheme] = useDarkMode();
   const toggle = () => {
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/tours" element={<OurTours />} />
           <Route path="/blog-details" element={<Blog />} />
+          <Route path="/signin" element={<SignIn />} />
         </Route>
       </Routes>
 

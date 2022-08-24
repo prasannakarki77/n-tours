@@ -23,7 +23,7 @@ const Navigation = () => {
           <Link className="m-4 hover:text-primary transition-all" to="/">
             About
           </Link>
-          <Link className="m-4 hover:text-primary transition-all" to="/">
+          <Link className="m-4 hover:text-primary transition-all" to="/signin">
             <button className="text-white bg-primary py-2 px-3 rounded-md hover:bg-primary_dark transition-all">
               Sign In
             </button>
