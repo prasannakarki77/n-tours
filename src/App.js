@@ -9,6 +9,7 @@ import Blogs from "./pages/Blogs";
 import Blog from "./components/Blog";
 import Tours from "./components/Tours";
 import useDarkMode from "./useDarkMode";
+import OurTours from "./pages/OurTours";
 const App = () => {
   const [colorTheme, setTheme] = useDarkMode();
   const toggle = () => {
@@ -21,7 +22,7 @@ const App = () => {
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/tours" element={<Tours />} />
+          <Route path="/tours" element={<OurTours />} />
           <Route path="/blog-details" element={<Blog />} />
         </Route>
       </Routes>
