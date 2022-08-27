@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Tours = () => {
   const toursList = [
     {
@@ -8,7 +8,7 @@ const Tours = () => {
         "https://images.unsplash.com/photo-1576948187290-457c015b3bff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     },
     {
-      name: "Kathmansu",
+      name: "Kathmandu",
       image:
         "https://images.unsplash.com/photo-1605640797058-58b7040a0e61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80",
     },
@@ -43,16 +43,19 @@ const Tours = () => {
       </div>
       <div className="flex justify-between items-center flex-wrap">
         {toursList.map((tour) => (
-          <div className=" relative w-80 rounded-xl overflow-hidden cursor-pointer shadow-2xl mb-10 h-60">
-            <img
-              src={tour.image}
-              alt="tour_image"
-              className="hover:scale-110 transition-all  brightness-[90%] hover:brightness-100 w-full h-full object-cover"
-            />
-            <span className="text-white absolute bottom-3 text-center w-full text-lg font-extrabold brightness-100">
-              {tour.name}
-            </span>
-          </div>
+          <Link to="/tour">
+            {" "}
+            <div className=" relative w-80 rounded-xl overflow-hidden cursor-pointer shadow-2xl mb-10 h-60">
+              <img
+                src={tour.image}
+                alt="tour_image"
+                className="hover:scale-110 transition-all  brightness-[90%] hover:brightness-100 w-full h-full object-cover"
+              />
+              <span className="text-white absolute bottom-3 text-center w-full text-lg font-extrabold brightness-100">
+                {tour.name}
+              </span>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
