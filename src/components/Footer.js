@@ -36,7 +36,7 @@ const Footer = () => {
             Blogs
           </Link>
           <Link
-            to="/"
+            to="/about"
             className="mb-1 block hover:underline transition-all cursor-pointer"
           >
             About
