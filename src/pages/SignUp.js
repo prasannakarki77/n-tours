@@ -13,7 +13,7 @@ const SignUp = () => {
         <h1 className=" text-3xl  text-primary font-bold text-center mt-5">
           Sign Up
         </h1>
-        <div className="relative max-w-sm mx-auto shadow-2xl my-8">
+        <div className="relative max-w-sm mx-auto  my-8">
           <input
             className=" rounded-full py-3 text-black px-10 text-md  font-semibold text-center border-grey border-2  outline-none placeholder:text-gray focus:border-primary transition-all w-full"
             placeholder="Username"
@@ -24,7 +24,7 @@ const SignUp = () => {
           />
         </div>
         <div className="flex justify-between my-8  max-w-xl mx-auto">
-          <div className="relative max-w-xs shadow-2xl mr-4">
+          <div className="relative max-w-xs  mr-4">
             <input
               className=" rounded-full py-3  text-black px-10 text-md  font-semibold text-center border-grey border-2  outline-none placeholder:text-gray focus:border-primary transition-all w-full"
               placeholder="Firstname"
@@ -34,7 +34,7 @@ const SignUp = () => {
               className="absolute left-4 top-3.5 text-gray-400"
             />
           </div>
-          <div className="relative max-w-xs  shadow-2xl">
+          <div className="relative max-w-xs  ">
             <input
               className=" rounded-full py-3 text-black px-10 text-md  font-semibold text-center border-grey border-2  outline-none placeholder:text-gray focus:border-primary transition-all w-full"
               placeholder="Lastname"
@@ -46,7 +46,7 @@ const SignUp = () => {
           </div>
         </div>
         <div className="flex justify-between my-8  max-w-xl mx-auto">
-          <div className="relative max-w-xs shadow-2xl mr-4">
+          <div className="relative max-w-xs  mr-4">
             <input
               className=" rounded-full py-3  text-black px-10 text-md  font-semibold text-center border-grey border-2  outline-none placeholder:text-gray focus:border-primary transition-all w-full"
               placeholder="Email address"
@@ -56,7 +56,7 @@ const SignUp = () => {
               className="absolute left-4 top-3.5 text-gray-400"
             />
           </div>
-          <div className="relative max-w-xs  shadow-2xl">
+          <div className="relative max-w-xs  ">
             <input
               className=" rounded-full py-3 text-black px-10 text-md  font-semibold text-center border-grey border-2  outline-none placeholder:text-gray focus:border-primary transition-all w-full"
               placeholder="Phone number"
@@ -67,7 +67,7 @@ const SignUp = () => {
             />
           </div>
         </div>
-        <div className="relative max-w-sm mx-auto shadow-2xl my-8">
+        <div className="relative max-w-sm mx-auto  my-8">
           <input
             className=" rounded-full py-3 text-black px-10 text-md  font-semibold text-center border-grey border-2  outline-none placeholder:text-gray focus:border-primary transition-all w-full"
             placeholder="Enter password"
@@ -78,7 +78,7 @@ const SignUp = () => {
             className="absolute left-4 top-3.5 text-gray-400"
           />
         </div>
-        <div className="relative max-w-sm mx-auto shadow-2xl my-8">
+        <div className="relative max-w-sm mx-auto  my-8">
           <input
             className=" rounded-full py-3 text-black px-10 text-md  font-semibold text-center border-grey border-2  outline-none placeholder:text-gray focus:border-primary transition-all w-full"
             placeholder="Confirm password"

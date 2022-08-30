@@ -11,7 +11,7 @@ const SignIn = () => {
         <h1 className=" text-3xl  text-primary font-bold text-center mt-5">
           Sign In
         </h1>
-        <div className="relative max-w-sm mx-auto shadow-2xl my-10">
+        <div className="relative max-w-sm mx-auto my-10">
           <input
             className=" rounded-full py-3 text-black px-10 text-lg  font-semibold text-center border-grey border-2  outline-none placeholder:text-gray focus:border-primary transition-all w-full"
             placeholder="Username"
@@ -21,7 +21,7 @@ const SignIn = () => {
             className="absolute left-4 top-4 text-gray-600"
           />
         </div>
-        <div className="relative max-w-sm mx-auto shadow-2xl my-10">
+        <div className="relative max-w-sm mx-auto my-10">
           <input
             className=" rounded-full py-3  text-black px-10 text-lg  font-semibold text-center border-grey border-2  outline-none placeholder:text-gray focus:border-primary transition-all w-full"
             placeholder="Password"

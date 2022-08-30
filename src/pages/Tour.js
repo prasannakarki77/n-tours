@@ -6,12 +6,11 @@ import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
+import BookingFormModal from "../components/BookingFormModal";
 
 const Tour = () => {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
+  const [openForm, setOpenForm] = useState(false);
+  const handleOnClose = () => setOpenForm(false);
   return (
     <div className="min-h-screen">
       <div className="bg-tour4 h-[60%] bg-cover bg-bottom pt-[16%] p-8 ">
@@ -58,7 +57,7 @@ const Tour = () => {
             Rafting, Bunjee jumping, Paragliding, Boating, Trekking etc.
           </p>
         </div>
-        <p className="text-2xl font-bold text-center mb-10">
+        <p className="text-2xl font-bold text-center mb-10 dark:text-white">
           Choose booking option
         </p>
 
@@ -78,7 +77,7 @@ const Tour = () => {
               person
             </p>
             <button
-              onClick={handleOpen}
+              onClick={() => setOpenForm(true)}
               className=" text-primary border-primary font-bold inline-block border px-6 py-3 text-lg rounded-2xl hover:bg-primary hover:text-white transition-all hover:scale-105 hover:translate-y[-1]"
             >
               Book now
@@ -99,7 +98,7 @@ const Tour = () => {
               person
             </p>
             <button
-              onClick={handleOpen}
+              onClick={() => setOpenForm(true)}
               className=" text-primary border-primary font-bold inline-block border px-6 py-3 text-lg rounded-2xl hover:bg-primary hover:text-white transition-all hover:scale-105 hover:translate-y[-1]"
             >
               Book now
@@ -122,7 +121,7 @@ const Tour = () => {
               / person
             </p>
             <button
-              onClick={handleOpen}
+              onClick={() => setOpenForm(true)}
               className=" text-primary border-primary font-bold inline-block border px-6 py-3 text-lg rounded-2xl hover:bg-primary hover:text-white transition-all hover:scale-105 hover:translate-y[-1]"
             >
               Book now
@@ -130,6 +129,7 @@ const Tour = () => {
           </div>
         </div>
       </div>
+      <BookingFormModal onClose={handleOnClose} visible={openForm} />
     </div>
   );
 };
